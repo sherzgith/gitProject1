@@ -109,7 +109,15 @@ You can see the picture below
 
 Picture will be between the text
 
+## References to the files
+
+1. Find the examples [here](./src/functions/functions_exec.py) for the functions.
+
+2. Check the [gitignore] (.gitignore) file as well.
+
+
 ## References:
+
 1. Sherzod's GitHub account [link](https://github.com/sherzgith)
 
 2. [Markdown support](https://www.jetbrains.com/help/pycharm/markdown.html)
