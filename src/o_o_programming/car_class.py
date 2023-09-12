@@ -3,7 +3,7 @@
 
 class Car:
     """A simple attempt to represent a car."""
-    def __int__(self, make, model, year):
+    def __init__(self, make, model, year):
         """Initialize attributes to describe a car"""
         self.make = make
         self.model = model
@@ -15,4 +15,4 @@ class Car:
 
 
 my_new_car = Car('audi', 'a4', 2016)
-print(my_new_car.get_descriptive_name())
+print(my_new_car.get_descriptive_names())
