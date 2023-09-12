@@ -32,7 +32,7 @@ class Vehicle:
         self.__make = make
         self.__model = model
         self.__year = year
-        self.__odometer_reading = 0 # default value # hidden attribute from object
+        self.__odometer_reading = 0 # default value # hidden attribute from object, private
 
     def get_description(self):
         """summary of the car details , usually you have return statement"""
@@ -83,4 +83,7 @@ print(car1.get_odometer())
 # car1.increment_odometer('a')
 car1.increment_odometer(-50)
 print(car1.get_odometer())
+
+
+
 
