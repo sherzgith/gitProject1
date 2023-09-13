@@ -60,6 +60,24 @@ class Car:
 
 
 
+# ElectricCar class is inheriting Car class ( attributes and behaviour)
+class ElectricCar(Car):
+    """Represent aspects of a car , specific to electric vehicles"""
+    # when we dont have constructor (__init__ method) in the child class,
+    # parent class constructor is executed.
+    def __init__(self, make, model, year):
+        super().__init__(make, model, year)
+        self.battery_size = 100 # in kWh ( with default value)
+        # battery_size is child class attribute only
+
+    def describe_battery(self):
+        print(f"Your current vehicle battery size : {self.battery_size} ")
+
+
+
+
+
+
 # # Create the object (instance of Vehicle class)
 # car1 = Car('mazda', '6', 2016)
 # car1.get_description()
