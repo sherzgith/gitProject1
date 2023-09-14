@@ -1,4 +1,5 @@
 # Creating car model
+import time
 
 
 class Vehicle:
@@ -38,6 +39,7 @@ class Car:
         """summary of the car details , usually you have return statement"""
         print(f"Details of the car\n\tMake/model/year: {self.__make.title()}/{self.__model.upper()}/{self.__year}")
 
+
     def get_odometer(self):
         return f'Current milage : {self.__odometer_reading}'
 
@@ -65,13 +67,21 @@ class ElectricCar(Car):
     """Represent aspects of a car , specific to electric vehicles"""
     # when we dont have constructor (__init__ method) in the child class,
     # parent class constructor is executed.
-    def __init__(self, make, model, year):
+    def __init__(self, make, model, year, battery_size = 100):
         super().__init__(make, model, year)
-        self.battery_size = 100 # in kWh ( with default value)
+        self.battery_size = battery_size   # in kWh ( with default value)
         # battery_size is child class attribute only
 
     def describe_battery(self):
         print(f"Your current vehicle battery size : {self.battery_size} ")
+
+
+    def get_description(self):
+        """ New function for the ElectricCar , gives more details."""
+        super().get_description()
+        print(f"\tBattery size: {self.battery_size}")
+
+
 
 
 

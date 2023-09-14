@@ -26,10 +26,25 @@ car1.increment_odometer(-50)
 print(car1.get_odometer())
 
 print('**************Creating the electric car object........')
-lucid1 = ElectricCar('tesla', 'Y', 2023)
+lucid1 = ElectricCar('lucid', 'Y', 2023)
 lucid1.get_description()
 print(lucid1.get_odometer())
 print('Battery size :', lucid1.battery_size)
 # print(car1.battery_size) # parent does not have this attribute
 # print(car1.describe_battery) # parent does not have this attribute
 lucid1.describe_battery()
+
+
+print('***************TESLA*********************')
+tesla1 = ElectricCar('tesla', 'X', 2022, 88)
+tesla1.get_description()
+tesla1.describe_battery()
+print("***************Method Overriding***************")
+car1.get_description()
+tesla1.get_description()
+
+
+
+
+
+
