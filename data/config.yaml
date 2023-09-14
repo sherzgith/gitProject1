@@ -1,0 +1,14 @@
+host: https://www.saucedemo.com/
+username: johndoe1
+password: secret1
+
+
+testSIT:
+  host: https://www.saucedemo.com/
+  username: johndoe1!
+  password: secret1!
+
+testUAT:
+  host: https://www.saucedemo.com/
+  username: johndoe2
+  password: secret2

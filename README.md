@@ -109,6 +109,22 @@ You can see the picture below
 
 Picture will be between the text
 
+
+## YAML files for Test Data storage and Input file
+
+Representing the data in python data structure:
+```python
+student = {'name': 'John Doe', 'age': '20', 'position': ['qa', 'ba', 'dev']}
+```
+Representing the data in yaml file:
+```yaml
+name: John Doe
+age: 20
+positions:
+  - 'qa'
+  - 'ba'
+  - 'dev'
+```
 ## References to the files
 
 1. Find the examples [here](./src/functions/functions_exec.py) for the functions.
