@@ -1,5 +1,5 @@
 # Creating car model
-import time
+
 
 
 class Vehicle:
